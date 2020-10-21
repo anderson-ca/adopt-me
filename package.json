@@ -4,6 +4,7 @@
   "description": "",
   "main": "App.js",
   "scripts": {
+    "format": "prettier \"src/**/*.{js,html}\" --write",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +19,6 @@
   },
   "homepage": "https://github.com/anderson-ca/adopt-me#readme",
   "devDependencies": {
-    "prettier": "^2.1.2"
+    "prettier": "2.1.2"
   }
 }
