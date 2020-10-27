@@ -1,15 +1,17 @@
 import React from "react";
 import { render } from "react-dom";
-// import Pet from "./Pet"; // composite component
 import SearchParams from "./SearchParams";
 
+// import Pet from "./Pet"; // composite component
 const App = () => {
   return (
-    <div>
-      <h1>Adopt Me!</h1>
-      <SearchParams />
-    </div>
-  );
+    <React.StrictMode>
+      <div>
+        <h1>Adopt Me!</h1>
+        <SearchParams />
+      </div>
+    </React.StrictMode>
+);
 };
 
 render(<App />, document.getElementById("root"));
