@@ -3,9 +3,9 @@ import { ANIMALS } from "@frontendmasters/pet";
 import useDropdown from "./useDropdown";
 
 const SearchParams = () => {
-  const [location, updateLocation] = useState("Austin, TX");
+  const [location, setLocation] = useState("Austin, TX");
   const [breeds, setBreeds] = useState([]);
-  const [animal, AnimalDropdown] = useDropdown("Animal", "Dog", ANIMALS);
+  const [animal, AnimalDropdown] = useDropdown("Animal", "dog", ANIMALS);
   const [breed, BreedDropdown] = useDropdown("Breed", "", breeds);
 
   return (
@@ -17,7 +17,7 @@ const SearchParams = () => {
             id="location"
             value={location}
             placeholder="Location"
-            onChange={(event) => updateLocation(event.target.value)}
+            onChange={(event) => setLocation(event.target.value)}
           />
         </label>
 
